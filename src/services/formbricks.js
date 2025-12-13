@@ -64,6 +64,7 @@ async function fetchSurveysFromAPI() {
         headers: {
           "x-api-key": process.env.FORMBRICKS_API_KEY,
         },
+        timeout: 15000, // 15 seconds timeout
       }
     );
 
@@ -108,6 +109,7 @@ async function refreshSurveyCache() {
     console.log(`Successfully synced ${synced} surveys into the database.`);
   } catch (error) {
     console.error("Failed to refresh survey cache:", error.message);
+    throw error; // Re-throw so server.js knows initialization failed
   }
 }
 

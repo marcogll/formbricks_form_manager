@@ -6,9 +6,19 @@ const {
   updateEnvironmentAlias,
   getSurveysByEnvironment,
   updateSurveySlug,
+  refreshSurveyCache,
 } = require("../services/formbricks");
 
 router.use(ensureAdminToken);
+
+router.post("/sync", async (req, res) => {
+  try {
+    await refreshSurveyCache();
+    res.json({ status: "ok", message: "Surveys synced successfully" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 router.get("/environments", (req, res) => {
   try {
