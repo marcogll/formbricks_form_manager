@@ -79,20 +79,22 @@ Una vez desplegado, verifica:
 - **Ejemplo de encuesta**: `https://forms.soul23.cloud/socias/Contratos`
   - Debe redirigir a: `https://feedback.soul23.cloud/s/k40zfrs2r62ifbgavpumemlc`
 
+## CToken: your_admin_token_here
+
 ## Configuración Inicial
 
 ### 1. Acceder al Admin UI
 
 ```
 URL: https://forms.soul23.cloud/admin
-Token: 9HiRr6K0Hfp2I4RgoLLsXr
+Token: your_admin_token_here
 ```
 
 ### 2. Configurar Aliases
 
 1. Ve al Admin UI
 2. Configura los aliases para tus proyectos:
-   - `socias` → Environment `cmbgr9ipo000ls201jpy12fbi`
+   - `socias` → Environment `your_environment_id_here`
    - `vanity` → Environment `cmbgr6u7s0009s201i45xtbtv`
 
 ### 3. Usar las Encuestas
