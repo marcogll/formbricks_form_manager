@@ -58,15 +58,22 @@ async function fetchSurveysFromAPI() {
   }
 
   try {
-    const response = await axios.get(
-      `${process.env.FORMBRICKS_SDK_URL}/api/v1/management/surveys`,
-      {
-        headers: {
-          "x-api-key": process.env.FORMBRICKS_API_KEY,
-        },
-        timeout: 15000, // 15 seconds timeout
-      }
+    const url = `${process.env.FORMBRICKS_SDK_URL}/api/v1/management/surveys`;
+    console.log(`[DEBUG] Fetching surveys from: ${url}`);
+    console.log(
+      `[DEBUG] API Key starts with: ${
+        process.env.FORMBRICKS_API_KEY
+          ? process.env.FORMBRICKS_API_KEY.substring(0, 4)
+          : "undefined"
+      }`
     );
+
+    const response = await axios.get(url, {
+      headers: {
+        "x-api-key": process.env.FORMBRICKS_API_KEY,
+      },
+      timeout: 15000, // 15 seconds timeout
+    });
 
     return Array.isArray(response.data?.data) ? response.data.data : [];
   } catch (error) {

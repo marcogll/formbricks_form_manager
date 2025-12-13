@@ -15,6 +15,7 @@ app.set("views", path.join(__dirname, "views"));
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
 // Health check endpoint
 app.get("/health", (req, res) => {

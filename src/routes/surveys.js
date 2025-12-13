@@ -13,11 +13,16 @@ router.get("/:root/:survey", (req, res) => {
       `Found surveyId: ${surveyId}, environmentId: ${environmentId}, type: ${type}`
     );
 
-    // Redirect link surveys to Formbricks
+    // Redirect link surveys to Formbricks (via intermediate page for OG tags)
     if (type === "link") {
       const redirectUrl = `${process.env.FORMBRICKS_SDK_URL}/s/${surveyId}`;
-      console.log(`Redirecting to: ${redirectUrl}`);
-      return res.redirect(redirectUrl);
+      console.log(`Rendering redirect page for: ${redirectUrl}`);
+      return res.render("redirect", {
+        title: "Vanity | formbricks",
+        redirectUrl: redirectUrl,
+        currentUrl: `${process.env.BASE_DOMAIN}/${root}/${survey}`,
+        baseDomain: process.env.BASE_DOMAIN,
+      });
     }
 
     // Embed app surveys
@@ -26,6 +31,7 @@ router.get("/:root/:survey", (req, res) => {
       surveyId: surveyId,
       formbricksSdkUrl: process.env.FORMBRICKS_SDK_URL,
       formbricksEnvId: environmentId,
+      baseDomain: process.env.BASE_DOMAIN,
     });
   } else {
     console.log("Survey not found");
