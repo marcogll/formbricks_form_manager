@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f0f2f5;
+    }
+  </style>
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.async = true;
+      script.src = "<%= formbricksSdkUrl %>/js/formbricks.umd.cjs";
+      
+      script.onload = function() {
+        if (window.formbricks) {
+          window.formbricks.init({
+            environmentId: "<%= formbricksEnvId %>",
+            apiHost: "<%= formbricksSdkUrl %>"
+          });
+          window.formbricks.display("<%= surveyId %>");
+        }
+      };
+
+      var firstScript = document.getElementsByTagName("script")[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    })();
+  </script>
+</head>
+<body>
+</body>
+</html>

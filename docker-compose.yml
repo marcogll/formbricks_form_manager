@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  formbricks-vanity:
+    image: your-dockerhub-username/formbricks-vanity-server:latest
+    container_name: formbricks-vanity
+    ports:
+      - "3011:3011"
+    environment:
+      - PORT=3011
+      - FORMBRICKS_SDK_URL=${FORMBRICKS_SDK_URL}
+      - FORMBRICKS_API_KEY=${FORMBRICKS_API_KEY}
+      - ADMIN_API_TOKEN=${ADMIN_API_TOKEN}
+      - FORMBRICKS_ENV_ID=${FORMBRICKS_ENV_ID}
+      - BASE_DOMAIN=${BASE_DOMAIN}
+      - SQLITE_DB_PATH=
+    volumes:
+      - formbricks_data:/app/data
+    restart: unless-stopped
+    networks:
+      - coolify
+
+volumes:
+  formbricks_data:
+    driver: local
+
+networks:
+  coolify:
+    external: true

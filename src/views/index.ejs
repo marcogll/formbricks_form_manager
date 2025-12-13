@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <style>
+      :root {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        color: #0b1b2b;
+        background: #f4f6fb;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .panel {
+        max-width: 900px;
+        width: 100%;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 15px 40px rgba(15, 23, 42, 0.2);
+        padding: 3rem;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #3f4b5b;
+      }
+
+      .grid {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        padding: 1.25rem;
+        border-radius: 16px;
+        border: 1px solid #e0e6ef;
+        background: #f9fbff;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        background: #e5edff;
+        color: #3855ff;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="pill">Formbricks Vanity</div>
+      <h1>Surveys under your own brand</h1>
+      <p>
+        This service proxies Formbricks surveys behind clean, semantic URLs and renders the
+        official experience within your own domain. No manual mapping files, no redirect
+        chains — just friendly slugs that everyone on your team can memorise.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Friendly URLs</h2>
+          <p>
+            Every survey is addressable via <code>/:project/:partner/:survey</code>. The slug
+            maps transparently to the Formbricks survey ID.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Automatic Sync</h2>
+          <p>
+            The server fetches your Formbricks catalog at startup and keeps the SQLite-backed
+            registry in sync without manual edits.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Admin controls</h2>
+          <p>
+            A protected API lets you inspect and manage the current mappings, so your ops team
+            can add or edit surveys without touching the CLI.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
