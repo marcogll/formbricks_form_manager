@@ -81,10 +81,10 @@ Deployment en un solo click con Coolify. Ver [COOLIFY.md](./COOLIFY.md) para ins
 
 ```bash
 # Construir imagen
-docker build -t your-username/formbricks-vanity-server:latest .
+docker build -t marcogll/soul23_form_mgr:latest .
 
 # Publicar a Docker Hub
-docker push your-username/formbricks-vanity-server:latest
+docker push marcogll/soul23_form_mgr:latest
 ```
 
 ## 🎮 Uso

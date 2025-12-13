@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   formbricks-vanity:
-    image: your-dockerhub-username/formbricks-vanity-server:latest
+    image: marcogll/soul23_form_mgr:latest
     container_name: formbricks-vanity
     ports:
       - "3011:3011"

@@ -17,10 +17,10 @@
 docker login
 
 # Construir la imagen
-docker build -t your-dockerhub-username/formbricks-vanity-server:latest .
+docker build -t marcogll/soul23_form_mgr:latest .
 
 # Publicar a Docker Hub
-docker push your-dockerhub-username/formbricks-vanity-server:latest
+docker push marcogll/soul23_form_mgr:latest
 ```
 
 ### 2. Configurar en Coolify
@@ -41,12 +41,14 @@ docker push your-dockerhub-username/formbricks-vanity-server:latest
    En Coolify, configura estas variables de entorno:
 
    ```
-   FORMBRICKS_API_KEY=fbk_6QpdF1eC0E9umr9HjWUBaTxO_ispeHZYd-dI_EK9m2Q
-   ADMIN_API_TOKEN=9HiRr6K0Hfp2I4RgoLLsXr
-   FORMBRICKS_ENV_ID=cmbgr9ipo000ls201jpy12fbi,cmbgr9ipk000gs201rcukyfr7
+   FORMBRICKS_API_KEY=fbk_...
+   ADMIN_API_TOKEN=...
+   FORMBRICKS_ENV_ID=...
+   FORMBRICKS_SDK_URL=https://feedback.soul23.cloud
+   BASE_DOMAIN=https://forms.soul23.cloud
    ```
 
-   > ⚠️ **Importante**: No incluyas `FORMBRICKS_SDK_URL` ni `BASE_DOMAIN` en las variables de entorno de Coolify, ya que están hardcodeadas en el docker-compose.yml
+   > 💡 **Nota**: Asegúrate de configurar todas estas variables en Coolify para que coincidan con tu entorno.
 
 4. **Configurar Dominio**
 
@@ -110,10 +112,10 @@ Para actualizar a una nueva versión:
 
 ```bash
 # 1. Construir nueva imagen
-docker build -t your-dockerhub-username/formbricks-vanity-server:v1.1.0 .
+docker build -t marcogll/soul23_form_mgr:v1.1.0 .
 
 # 2. Publicar
-docker push your-dockerhub-username/formbricks-vanity-server:v1.1.0
+docker push marcogll/soul23_form_mgr:v1.1.0
 
 # 3. En Coolify, actualiza la imagen en docker-compose.yml
 # 4. Click en "Redeploy"

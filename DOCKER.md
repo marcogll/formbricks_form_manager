@@ -5,7 +5,7 @@
 ### 1. Build the Docker Image
 
 ```bash
-docker build -t your-dockerhub-username/formbricks-vanity-server:latest .
+docker build -t marcogll/soul23_form_mgr:latest .
 ```
 
 ### 2. Run the Container
@@ -18,7 +18,7 @@ docker run -d \
   -e ADMIN_API_TOKEN=your_admin_token_here \
   -v $(pwd)/data:/app/data \
   --name formbricks-vanity \
-  your-dockerhub-username/formbricks-vanity-server:latest
+  marcogll/soul23_form_mgr:latest
 ```
 
 ### 3. Using Docker Compose (Recommended)
@@ -30,7 +30,7 @@ version: "3.8"
 
 services:
   formbricks-vanity:
-    image: your-dockerhub-username/formbricks-vanity-server:latest
+    image: marcogll/soul23_form_mgr:latest
     container_name: formbricks-vanity
     ports:
       - "3011:3011"
@@ -75,15 +75,15 @@ docker login
 ### 2. Tag Your Image
 
 ```bash
-docker tag formbricks-vanity-server:latest your-dockerhub-username/formbricks-vanity-server:latest
-docker tag formbricks-vanity-server:latest your-dockerhub-username/formbricks-vanity-server:v1.0.0
+docker tag formbricks-vanity-server:latest marcogll/soul23_form_mgr:latest
+docker tag formbricks-vanity-server:latest marcogll/soul23_form_mgr:v1.0.0
 ```
 
 ### 3. Push to Docker Hub
 
 ```bash
-docker push your-dockerhub-username/formbricks-vanity-server:latest
-docker push your-dockerhub-username/formbricks-vanity-server:v1.0.0
+docker push marcogll/soul23_form_mgr:latest
+docker push marcogll/soul23_form_mgr:v1.0.0
 ```
 
 ## Data Persistence
