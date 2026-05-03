@@ -1,99 +1,23 @@
-<div align="center">
-
-<a href="https://soul23.mx">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo_wh.png">
-  <img src="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo_blk.png" alt="Soul23" width="110">
-</picture>
-</a>
-
-# Forms Server Vanity
-
-Servidor backend para gestión de datos y lógica de negocio ⚙️
-
----
-
-<h1 align="center">forms_server_vanity.git</h1>
-
-
-
-
-[Características](#características) •
-[Instalación](#instalación-rápida) •
-[Deployment](#deployment) •
-[Documentación](#documentación)
-
-</div>
-
-# Forms Server Vanity
-
-Servidor backend para gestión de datos y lógica de negocio ⚙️
-
-<p>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
-  <img src="https://img.shields.io/badge/website-111111?style=flat-square&logo=github&logoColor=white" alt="Website">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/marcogll/mg_data_storage/refs/heads/main/soul23/logo/soul23_logo.svg" width="110" alt="Soul23">
 </p>
 
----
+<h1 align="center">Forms Server Vanity</h1>
 
-<h1 align="center">forms_server_vanity.git</h1>
-
-
-
-
-[Características](#características) •
-[Instalación](#instalación-rápida) •
-[Deployment](#deployment) •
-[Documentación](#documentación)
-
-</div>
-
-# Forms Server Vanity
-
-Servidor backend para gestión de datos y lógica de negocio ⚙️
-
-<p>
-  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+<p align="center">
+  Backend para gestion de datos y logica de negocio 🔧♀
 </p>
 
----
-
-<h1 align="center">forms_server_vanity.git</h1>
-
-
-
-
-[Características](#características) •
-[Instalación](#instalación-rápida) •
-[Deployment](#deployment) •
-[Documentación](#documentación)
-
-</div>
-
-# Forms Server Vanity
-
-Servidor backend para gestión de datos y lógica de negocio ⚙️
-
-<p>
-  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-3a3a3a?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 </p>
 
----
+  Backend para gestión de datos y lógica de negocio ⚙️
+</p>
 
-<h1 align="center">forms_server_vanity.git</h1>
-
-
-
-
-[Características](#características) •
-[Instalación](#instalación-rápida) •
-[Deployment](#deployment) •
-[Documentación](#documentación)
-
-</div>
-
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-3a3a3a?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+</p>
 
 ## 🎯 Características
 
@@ -262,6 +186,7 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 [⬆ Volver arriba](#formbricks-vanity-server)
 
 </div>
+
 
 
 
