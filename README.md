@@ -30,7 +30,9 @@ Servidor backend para gestión de datos y lógica de negocio ⚙️
 Servidor backend para gestión de datos y lógica de negocio ⚙️
 
 <p>
-  <img src="https://img.shields.io/badge/español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+  <img src="https://img.shields.io/badge/website-111111?style=flat-square&logo=github&logoColor=white" alt="Website">
 </p>
 
 ---
@@ -52,7 +54,29 @@ Servidor backend para gestión de datos y lógica de negocio ⚙️
 Servidor backend para gestión de datos y lógica de negocio ⚙️
 
 <p>
-  <img src="https://img.shields.io/badge/español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
+</p>
+
+---
+
+<h1 align="center">forms_server_vanity.git</h1>
+
+
+
+
+[Características](#características) •
+[Instalación](#instalación-rápida) •
+[Deployment](#deployment) •
+[Documentación](#documentación)
+
+</div>
+
+# Forms Server Vanity
+
+Servidor backend para gestión de datos y lógica de negocio ⚙️
+
+<p>
+  <img src="https://img.shields.io/badge/Español-111111?style=flat-square&logo=googletranslate&logoColor=white" alt="Español">
 </p>
 
 ---
@@ -238,6 +262,7 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 [⬆ Volver arriba](#formbricks-vanity-server)
 
 </div>
+
 
 
 
